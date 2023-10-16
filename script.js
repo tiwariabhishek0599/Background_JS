@@ -5,9 +5,9 @@ const colorButton = document.getElementById('colorButton');
 
 colorButton.addEventListener('click', function () {
     colorButton.classList.toggle('button-enlarged');
-    document.body.style.backgroundColor = colors[Index];
-    Index++;
-    if(Index==colors.length)[
-        Index = 0
-    ]
+    document.body.style.backgroundColor = colors[(Math.floor(Math.random() * colors.length))];
+    // Index++;
+    // if(Index==colors.length){
+    //     Index = 0;
+    // }
 });
